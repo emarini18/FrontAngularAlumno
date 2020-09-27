@@ -1,0 +1,54 @@
+<app-navbar></app-navbar>
+<div class="menu-bg col s-12 animated fadeIn fast">
+
+    <div class="perfil row col s12 ">
+
+        <div class="img-perfil col s12 m12 l6 xl6">
+            <img class="responsive-img " [src]="perfil.IMG_ALUMNO">
+        </div>
+
+
+        <div class="content-perfil col s12 m12 l6 xl6">
+
+            <h4>INFORMACIÓN PERSONAL</h4>
+
+            <div class="des-perfil">
+                <span>Nombre:</span>
+                <span>{{ perfil.NOMB_ALUMNO }}</span>
+            </div>
+
+            <div class="des-perfil">
+                <span>Apellido:</span>
+                <span>{{ perfil.APEL_ALUMNO }}</span>
+            </div>
+
+            <div class="des-perfil">
+                <span>Usuario:</span>
+                <span>{{ perfil.USER_ALUMNO }}</span>
+            </div>
+
+            <div class="des-perfil">
+                <span>Dni:</span>
+                <span>{{ perfil.DNI_ALUMNO }}</span>
+            </div>
+
+            <div class="des-perfil">
+                <span>Email:</span>
+                <span>{{ perfil.CORREO_ALUMNO }}</span>
+            </div>
+
+            <div class="des-perfil">
+                <span>Celular:</span>
+                <span>{{ perfil.CEL_ALUMNO }}</span>
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+
+</div>
+
+<!-- <pre> {{perfil | json}} </pre> -->

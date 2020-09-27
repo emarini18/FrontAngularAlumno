@@ -1,0 +1,102 @@
+<div class="content-bg animated fadeIn fast">
+
+    <div class="login-bg row">
+        <div class="title">
+            <h3>Registrarse</h3>
+        </div>
+        <form autocomplete="off" [formGroup]="forma" (ngSubmit)="registrarse()"
+            class="form-login col s11 xl6 l6 m9 center-block">
+
+            <div class="row row-login1">
+                <div class="input-field col offset-s1 s10  offset-xl2 xl8">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input id="icon_prefix" type="text" class="validate" formControlName="nombre">
+                    <label for="icon_prefix">Nombre</label>
+                </div>
+            </div>
+            <div class="row row-login1">
+                <div class="input-field col offset-s1 s10  offset-xl2 xl8">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input id="icon_prefix1" type="text" class="validate" formControlName="apellido">
+                    <label for="icon_prefix1">Apellido</label>
+                </div>
+            </div>
+
+            <div class="temporal-table">
+                <div class="row row-login1">
+                    <div class="input-field col offset-s1 s10 offset-xl2 xl4">
+                        <i class="material-icons prefix">email</i>
+                        <input id="icon_email" type="text" class="validate" formControlName="email">
+                        <label for="icon_email">Email</label>
+                    </div>
+                    <div class="input-field col offset-s1 s10 xl4">
+                        <i class="material-icons prefix">folder_shared</i>
+                        <input id="icon_folder_shared" type="text" class="validate" formControlName="dni">
+                        <label for="icon_folder_shared">DNI</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row row-login1 temp">
+                <div class="input-field col offset-s1 s10 offset-xl2 xl4">
+                    <i class="material-icons prefix">email</i>
+                    <input id="icon_email-1" type="text" class="validate" formControlName="email">
+                    <label for="icon_email-1">Email</label>
+                </div>
+            </div>
+            <div class="row row-login1 temp">
+                <div class="input-field col offset-s1 s10 xl4">
+                    <i class="material-icons prefix">folder_shared</i>
+                    <input id="icon_folder_shared-1" type="text" class="validate" formControlName="dni">
+                    <label for="icon_folder_shared-1">DNI</label>
+                </div>
+            </div>
+            <div class="row row-login1">
+                <div class="input-field col offset-s1 s10  offset-xl2 xl8">
+                    <i class="material-icons prefix">assignment_ind</i>
+                    <input id="icon_assignment_ind" type="text" class="validate" formControlName="username">
+                    <label for="icon_assignment_ind">Username</label>
+                </div>
+            </div>
+            <div class="row row-login2">
+                <div class="input-field col offset-s1 s10 offset-xl2 xl8">
+                    <i class="material-icons prefix">lock</i>
+                    <input id="icon_lock" type="password" class="validate" formControlName="password">
+                    <label for="icon_lock">Password</label>
+                </div>
+            </div>
+            <div class="row row-login1">
+                <div class="input-field col offset-s1 s10  offset-xl2 xl8">
+                    <i class="material-icons prefix">phone_iphone</i>
+                    <input id="icon_phone_iphone" type="text" class="validate" formControlName="celular">
+                    <label for="icon_phone_iphone">Celular</label>
+                </div>
+            </div>
+
+
+            <div class="btn-group">
+                <button class="btn waves-effect waves-light" type="submit">
+                    Ingresar
+                    <i class="material-icons right">send</i>
+                </button>
+                <span>
+                    <label>
+                        <input type="checkbox" class="filled-in" />
+                        <span> Estoy de acuerdo con Terminos y Condiciones
+                        </span>
+                    </label>
+                </span>
+                <span class="btnRegistrarse" [routerLink]="['/login']" routerLinkActive="router-link-active">
+                    ¿Ya tienes cuenta?
+                </span>
+            </div>
+
+        </form>
+    </div>
+
+
+</div>
+
+<!-- 
+[routerLink]="['/home']"
+routerLinkActive="router-link-active" -->

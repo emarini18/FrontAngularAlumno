@@ -1,0 +1,14 @@
+
+
+.menu-bg{
+    /* border:solid red; */
+    /* height: 100vh; */
+    /* border:solid black; */
+    margin: 1.5em;
+}
+
+.row-perfil{
+    box-sizing: border-box;
+    /* overflow: hidden; */
+    margin: 0;
+}

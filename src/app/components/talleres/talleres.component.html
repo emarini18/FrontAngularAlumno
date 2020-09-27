@@ -1,0 +1,29 @@
+<app-navbar></app-navbar>
+<div class="menu-bg col s-12 animated fadeIn fast">
+
+    <div class="perfil col xl2 center-block">
+
+        <div class="row-perfil row text-center">
+            <div class="col s12 m6 l4 xl4 "  *ngFor="let taller of talleres; let i=index">
+                <div class="card">
+                    <div class="card-image">
+                        <img [src]="taller.IMG_URL_TALLER">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">{{ taller.TITULO_TALLER }}</span>
+                        <p>{{ taller.DESCRIP_TALLER }}</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">{{ taller.horario.DESCR_HORARIO }} </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+
+<!-- <pre>{{ talleres | json}}</pre> -->
+<!-- {{ taller.IMG_URL_TALLER }} -->
