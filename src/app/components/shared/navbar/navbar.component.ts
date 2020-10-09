@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import Materialize from 'materialize-css';
 import { ProfileService } from 'src/app/services/profile.service';
@@ -9,6 +9,8 @@ import { ProfileService } from 'src/app/services/profile.service';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
+
+  @Input() perfil:any ={};
 
   constructor(private profileService: ProfileService) { }
 

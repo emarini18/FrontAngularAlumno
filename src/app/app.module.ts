@@ -12,6 +12,7 @@ import { TalleresComponent } from './components/talleres/talleres.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AuthGuard } from './guards/auth.guard';
 import { TokenInterceptorService } from './services/token-interceptor.service';
+import { SedesComponent } from './components/sedes/sedes.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { TokenInterceptorService } from './services/token-interceptor.service';
     RegistrarseComponent,
     NavbarComponent,
     HomeComponent,
-    TalleresComponent
+    TalleresComponent,
+    SedesComponent
   ],
   imports: [
     BrowserModule,

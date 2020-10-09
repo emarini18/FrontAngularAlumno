@@ -1,3 +1,9 @@
 .bg-nav{
     background: rgba(18, 110, 199,1);
+    padding:0 2em;
 }
+
+.sidenav{
+    background: rgba(114, 117, 119,1);
+}
+

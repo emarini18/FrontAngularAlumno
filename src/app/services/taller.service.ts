@@ -1,8 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Taller } from '../models/taller.interface';
-import { map } from 'rxjs/operators';
-
 
 
 @Injectable({
@@ -10,7 +8,8 @@ import { map } from 'rxjs/operators';
 })
 export class TallerService {
 
-  private url = 'http://localhost:3000/talleres'
+  private url = 'http://localhost:3000/talleres';
+  // private url = 'https://api-alumnoucv.herokuapp.com/talleres';
 
   constructor( private http:HttpClient) {}
 

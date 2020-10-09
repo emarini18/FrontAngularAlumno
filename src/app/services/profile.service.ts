@@ -10,6 +10,7 @@ import { Alumno } from '../models/alumno.interface';
 export class ProfileService {
 
   private url = 'http://localhost:3000/alumnos'
+  // private url = 'https://api-alumnoucv.herokuapp.com/alumnos';
 
   constructor( 
     private http:HttpClient,
