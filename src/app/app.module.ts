@@ -33,12 +33,12 @@ import { SedesComponent } from './components/sedes/sedes.component';
     APP_ROUTING
   ],
   providers: [
-    AuthGuard,
-    {
-      provide: HTTP_INTERCEPTORS,
-      useClass: TokenInterceptorService,
-      multi:true
-    }
+    AuthGuard
+    // {
+    //   provide: HTTP_INTERCEPTORS,
+    //   useClass: TokenInterceptorService,
+    //   multi:true
+    // }
   ],
   bootstrap: [AppComponent]
 })

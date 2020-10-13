@@ -3,7 +3,7 @@ export interface Alumno{
     apellido: string,
     emai: string,
     dni:string,
-    usuario: string,
+    id: string,
     password: string,
     celular:string,
     imagen:string,

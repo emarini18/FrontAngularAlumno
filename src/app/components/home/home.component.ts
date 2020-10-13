@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { Alumno } from 'src/app/models/alumno.interface';
 import { ProfileService } from 'src/app/services/profile.service';
+
 
 
 @Component({
@@ -12,16 +14,19 @@ export class HomeComponent implements OnInit {
 
 
   perfil:any = {};
+  idUsuario:any;
 
-  constructor( private profileService: ProfileService ) { }
+  constructor( private profileService: ProfileService,
+                private activateRoute: ActivatedRoute ) { }
 
   ngOnInit(): void {
 
-    this.getPerfil();
+    this.idUsuario= this.activateRoute.snapshot.params.id;
+    this.getPerfil(this.idUsuario);
   }
 
-  getPerfil(){
-    this.profileService.getPerfil()
+  getPerfil(id){
+    this.profileService.getPerfil(id)
       .subscribe(
         res => {
           console.log(res)

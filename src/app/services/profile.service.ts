@@ -9,6 +9,8 @@ import { Alumno } from '../models/alumno.interface';
 })
 export class ProfileService {
 
+  idUsuario: String;
+  autenticado:boolean=false;
   private url = 'http://localhost:3000/alumnos'
   // private url = 'https://api-alumnoucv.herokuapp.com/alumnos';
 
@@ -26,9 +28,11 @@ export class ProfileService {
   }
   
   loggedIn(): boolean{
-    if(localStorage.getItem('token')){
-      return true;
-    }
+    // if(localStorage.getItem('token')){
+    //   return true;
+    // }
+    return this.autenticado=true;
+  
   }
 
   getToken(){
@@ -36,11 +40,18 @@ export class ProfileService {
   }
 
   logOut(){
-    localStorage.removeItem('token');
+    // localStorage.removeItem('token');
     this.router.navigate(['/login']);
+    return this.autenticado=false;
+    
   }
 
-  getPerfil(){
-    return this.http.get(` ${this.url}/profile`);
+  getPerfil(id: String){
+    return this.http.get(`${this.url}/profile/${id}`);
   }
+
+  // getPerfil(){
+  //   return this.http.get(`${this.url}/profile`);
+  // }
+
 }
