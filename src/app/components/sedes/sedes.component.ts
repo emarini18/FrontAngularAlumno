@@ -9,7 +9,7 @@ import { SedesService } from '../../services/sedes.service';
 export class SedesComponent implements OnInit {
 
   constructor( private sedesService: SedesService ) { }
-  // Arreglo con la lista de talleres
+  // Arreglo con la lista de sedes
   sedes: any = [];
 
   ngOnInit(): void {

@@ -8,13 +8,13 @@ import { Taller } from '../models/taller.interface';
 })
 export class TallerService {
 
-  private url = 'http://localhost:3000/talleres';
+  private url = 'http://localhost:8080/talleres';
   // private url = 'https://api-alumnoucv.herokuapp.com/talleres';
 
   constructor( private http:HttpClient) {}
 
 
   getAllTalleres(){
-    return this.http.get(`${this.url}/all`);
+    return this.http.get(`${this.url}`);
   }
 }

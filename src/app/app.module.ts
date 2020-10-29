@@ -13,6 +13,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AuthGuard } from './guards/auth.guard';
 import { TokenInterceptorService } from './services/token-interceptor.service';
 import { SedesComponent } from './components/sedes/sedes.component';
+import { HorariosComponent } from './components/horarios/horarios.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { SedesComponent } from './components/sedes/sedes.component';
     NavbarComponent,
     HomeComponent,
     TalleresComponent,
-    SedesComponent
+    SedesComponent,
+    HorariosComponent
   ],
   imports: [
     BrowserModule,

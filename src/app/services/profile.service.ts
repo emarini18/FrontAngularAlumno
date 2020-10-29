@@ -11,7 +11,7 @@ export class ProfileService {
 
   idUsuario: String;
   autenticado:boolean=false;
-  private url = 'http://localhost:3000/alumnos'
+  private url = 'http://localhost:8080/alumnos'
   // private url = 'https://api-alumnoucv.herokuapp.com/alumnos';
 
   constructor( 
